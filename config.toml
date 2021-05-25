@@ -1,0 +1,72 @@
+baseurl = "https://n0x.io"
+title = "n0x.io"
+
+theme = "coder"
+
+languagecode = "de"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+favicon = "images/favicon.png"
+
+#disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "_N0x"
+    description = "Just some small blog"
+    keywords = "blog,developer,personal"
+    info = "» Here be dragons «"
+    avatarurl = "images/spoopy.gif"
+
+    footercontetn = "n0x.io"
+    hideFooter = false
+    hideCredits = false
+    hideCopyright = false
+    since = 2018
+
+    colorScheme = "dark"
+    hidecolorschemetoggle = false 
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
+[[params.social]]
+    name = "Github"
+    weight = 2 
+    icon = "fa fa-github fa-2x"
+    url = "https://github.com/n0x-io/"
+[[params.social]]
+    name = "GitLab"
+    weight = 1
+    icon = "fa fa-gitlab fa-2x"
+    url = "https://gitlab.com/n0x_io"
+[[params.social]]
+    name = "Twitter"
+    icon = "fa fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/n0x_io"
+
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
+[[menu.main]]
+    name = "Cloud"
+    weight = 3
+    url = "https://cloud.n0x.io/"
+[[menu.main]]
+    name = "Git"
+    weight = 4
+    url = "https://git.n0x.io/"

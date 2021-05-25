@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="_N0x">
+    <meta name="description" content="A Git-Server Setup In Minutes    Sometimes I wish I had other hobbies then just trying out new stuff I dicovered online.
+For Some strange reason I felt the need to set up my own git server - because who doesn&rsquo;t need an own server for the two or three projects you keep on github? I looked around and searched for some solutions that would fit my needs.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GIT_IN_MINUTES"/>
+<meta name="twitter:description" content="A Git-Server Setup In Minutes    Sometimes I wish I had other hobbies then just trying out new stuff I dicovered online.
+For Some strange reason I felt the need to set up my own git server - because who doesn&rsquo;t need an own server for the two or three projects you keep on github? I looked around and searched for some solutions that would fit my needs."/>
+
+    <meta property="og:title" content="GIT_IN_MINUTES" />
+<meta property="og:description" content="A Git-Server Setup In Minutes    Sometimes I wish I had other hobbies then just trying out new stuff I dicovered online.
+For Some strange reason I felt the need to set up my own git server - because who doesn&rsquo;t need an own server for the two or three projects you keep on github? I looked around and searched for some solutions that would fit my needs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://n0x.io/posts/gitbucket/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-07-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-07-02T00:00:00&#43;00:00" />
+
+
+
+    <title>
+  GIT_IN_MINUTES · n0x.io
+</title>
+
+    
+      <link rel="canonical" href="https://n0x.io/posts/gitbucket/">
+    
+
+    <link rel="preload" href="https://n0x.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://n0x.io/css/coder.min.93c41bf1e522f85ecda7355985f09000f71fc1d64dda9f74051b0fa06210e93f.css" integrity="sha256-k8Qb8eUi&#43;F7NpzVZhfCQAPcfwdZN2p90BRsPoGIQ6T8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://n0x.io/css/coder-dark.min.f37febc669ce189201c1918fac1948a254686c8d366a312c2d72b2bb71ad97d1.css" integrity="sha256-83/rxmnOGJIBwZGPrBlIolRobI02ajEsLXKyu3Gtl9E=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://n0x.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://n0x.io/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://n0x.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://n0x.io/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-dark"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://n0x.io/">
+      n0x.io
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://n0x.io/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://n0x.io/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://cloud.n0x.io/">Cloud</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://git.n0x.io/">Git</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://n0x.io/posts/gitbucket/">
+              GIT_IN_MINUTES
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2020-07-02T00:00:00Z'>
+                July 2, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="a-git-server-setup-in-minutes">
+  A Git-Server Setup In Minutes
+  <a class="heading-link" href="#a-git-server-setup-in-minutes">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Sometimes I wish I had other hobbies then just trying out new stuff I dicovered online.</p>
+<p>For Some strange reason I felt the need to set up my own git server - because who doesn&rsquo;t need an own server for the two or three projects you keep on github?
+I looked around and searched for some solutions that would fit my needs.</p>
+<p>My requirements were:</p>
+<ul>
+<li>Easy setup</li>
+<li>Very Low System requirements for the host</li>
+<li>Account management</li>
+<li>Private and Public Repos</li>
+<li>Open Source</li>
+</ul>
+<h2 id="the-possibilities">
+  The Possibilities
+  <a class="heading-link" href="#the-possibilities">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>There were multiple solutions to choose from.</p>
+<p>The first one was <a href="https://about.gitlab.com/install/">GitLab Core</a>. <a href="https://about.gitlab.com">GitLab</a> is widely know and a nice alternative to <a href="https://github.com/">GitHub</a>. But GitLab core does require some more System resources then my current Server has and so I ruled it out. It is good for bigger companies but I just needed something small.</p>
+<p><a href="https://gitea.io/en-us/">Gitea</a> was the next thing I came across. It checks all the boxes: lightweight, simple install, Open Source, etc. I downloaded it but had trouble getting it to run with my current database without exposing my database port to the internet and that is a big No. I don&rsquo;t want to open any more ports in my firewall then I need to.</p>
+<p>Here is where <a href="https://gitbucket.github.io/">GitBucket</a> (not to be confused with ATLASSIANs <a href="https://bitbucket.org/">Bitbucket</a>) came into play. It has similar features as Gitea but I was able to set it up exactly how I wanted to.</p>
+<p>So now <a href="https://git.n0x.io/">git.n0x.io</a> is a thing!</p>
+<h2 id="setting-up-gitbucket">
+  Setting up GitBucket
+  <a class="heading-link" href="#setting-up-gitbucket">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="prerequirements">
+  Prerequirements
+  <a class="heading-link" href="#prerequirements">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Just FYI I am running a little Debian 9 vServer so you might need to adapt the commands and changes to your system - which should be self-explanatory ;)</p>
+<p>GitBucket is mostly written in Scala so we firstly need to install openJDK on our Server to run it.</p>
+<pre><code>sudo apt update
+sudo apt install openjdk-11-jre
+</code></pre>
+<p>After installing the JRE I created a user account on which GitBucket should run. This way we make sure that I we do not grant to much privileges to GitBucket - it only gets the minimal things it needs to run</p>
+<pre><code>sudo adduser --system gitbucket
+</code></pre>
+<p>The <code>--system</code> parameter creates a systemuser account which mean a user that has no shell so we can&rsquo;t log into it the normal <code>su</code> way. To login to the new user use the following command:</p>
+<pre><code>sudo su - gitbucket -s /bin/bash
+</code></pre>
+<p>With <code>-s /bin/bash</code> we provide a shell to the user so we don&rsquo;t get logged out immediately.</p>
+<p>Now we download the <a href="https://github.com/gitbucket/gitbucket/releases/">latest version</a> of BitBucket (in my case 4.32.0) from GitHub to our local home.</p>
+<pre><code>cd ~
+wget https://github.com/gitbucket/gitbucket/releases/download/4.32.0/gitbucket.war
+</code></pre>
+<h3 id="running-gitbucket">
+  Running GitBucket
+  <a class="heading-link" href="#running-gitbucket">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>That is pretty much it. Now we can run GitBucket.war for the first time. There are multiple parameters you can specify (<a href="https://github.com/gitbucket/gitbucket#installation">See the official installation guide</a>) but for now we stick with just specifying the port we want GitBucket to run on initially</p>
+<pre><code>java -jar gitbucket.war --port=8080
+</code></pre>
+<p>If you have a firewall set up like I do, you of course need to open up the port you specified. For example if you use iptables:</p>
+<pre><code>sudo iptables -A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
+</code></pre>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2018 -
+        
+        2021
+         _N0x 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://n0x.io/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
