@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on n0x.io</title>
-    <link>https://n0x.io/posts/</link>
-    <description>Recent content in Posts on n0x.io</description>
+    <title>n0x.io</title>
+    <link>https://n0x.io/authors/_n0x/</link>
+    <description>Recent content on n0x.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 26 May 2021 11:14:07 +0200</lastBuildDate><atom:link href="https://n0x.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 May 2021 11:14:07 +0200</lastBuildDate><atom:link href="https://n0x.io/authors/_n0x/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World! Again!</title>
       <link>https://n0x.io/posts/helloworldagain/</link>

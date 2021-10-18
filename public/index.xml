@@ -6,19 +6,30 @@
     <description>Recent content on n0x.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://n0x.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 May 2021 11:14:07 +0200</lastBuildDate><atom:link href="https://n0x.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GIT_IN_MINUTES</title>
+      <title>Hello World! Again!</title>
+      <link>https://n0x.io/posts/helloworldagain/</link>
+      <pubDate>Wed, 26 May 2021 11:14:07 +0200</pubDate>
+      
+      <guid>https://n0x.io/posts/helloworldagain/</guid>
+      <description>Hello World! Again!    Hey there! It’s me again.
+It has been some time since I wrote a new article in here so I thought I’d state an update on me. In my first post I talked a little about me. By now some time went by and some things have changed - not that I wrote much about me to begin with.
+From full time job to becoming a student    I’m now 23 years old and just started my 4th semester at university after deciding that I wanted to study something computer science related.</description>
+    </item>
+    
+    <item>
+      <title>Git in minutes</title>
       <link>https://n0x.io/posts/gitbucket/</link>
-      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0200</pubDate>
       
       <guid>https://n0x.io/posts/gitbucket/</guid>
-      <description>A Git-Server Setup In Minutes    Sometimes I wish I had other hobbies then just trying out new stuff I dicovered online.
+      <description>A Git-Server Setup In Minutes    Sometimes I wish I had other hobbies then just trying out new stuff I discovered online.
 For Some strange reason I felt the need to set up my own git server - because who doesn&amp;rsquo;t need an own server for the two or three projects you keep on github? I looked around and searched for some solutions that would fit my needs.</description>
     </item>
     
     <item>
-      <title>Digispark_ReverseShell</title>
+      <title>Digispark Reverse-Shell</title>
       <link>https://n0x.io/posts/digispark_reverseshell/</link>
       <pubDate>Sat, 20 Jan 2018 17:03:46 +0100</pubDate>
       

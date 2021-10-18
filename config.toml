@@ -23,7 +23,7 @@ favicon = "images/favicon.png"
     info = "» Here be dragons «"
     avatarurl = "images/spoopy.gif"
 
-    footercontetn = "n0x.io"
+    footercontent = ""
     hideFooter = false
     hideCredits = false
     hideCopyright = false
@@ -37,6 +37,9 @@ favicon = "images/favicon.png"
 
     # RTL support
     rtl = false
+
+[taxonomies]
+    author = "authors"
 
 [[params.social]]
     name = "Github"
@@ -60,7 +63,7 @@ favicon = "images/favicon.png"
     url  = "/posts/"
 [[menu.main]]
     name = "About"
-    weight = 2
+    weight = 999
     url = "/about/"
 [[menu.main]]
     name = "Cloud"
@@ -70,3 +73,7 @@ favicon = "images/favicon.png"
     name = "Git"
     weight = 4
     url = "https://git.n0x.io/"
+[[menu.main]]
+    name = "PrivatBin"
+    weight = 5
+    url = "https://pb.n0x.io/"

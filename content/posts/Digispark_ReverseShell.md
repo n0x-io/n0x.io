@@ -1,8 +1,9 @@
----
-title: "Digispark_ReverseShell"
-date: 2018-01-20T17:03:46+01:00
-draft: false
----
++++
+title = "Digispark Reverse-Shell"
+date = 2018-01-20T17:03:46+01:00
+draft = false
+authors = ["_N0x"]
++++
 
 # Reverse Shell for 1,50€ - Digispark instead of USB Rubber Ducky
 

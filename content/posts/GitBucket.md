@@ -1,12 +1,13 @@
----
-title: "GIT_IN_MINUTES"
-date: 2020-07-02
-draft: false
----
++++
+title = "Git in minutes"
+date = 2020-07-02
+authors = ["_N0x"]
+draft = false
++++
 
 # A Git-Server Setup In Minutes
 
-Sometimes I wish I had other hobbies then just trying out new stuff I dicovered online. 
+Sometimes I wish I had other hobbies then just trying out new stuff I discovered online. 
 
 For Some strange reason I felt the need to set up my own git server - because who doesn't need an own server for the two or three projects you keep on github?
 I looked around and searched for some solutions that would fit my needs.

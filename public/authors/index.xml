@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on n0x.io</title>
+    <link>https://n0x.io/authors/</link>
+    <description>Recent content in Authors on n0x.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 26 May 2021 11:14:07 +0200</lastBuildDate><atom:link href="https://n0x.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://n0x.io/authors/_n0x/</link>
+      <pubDate>Wed, 26 May 2021 11:14:07 +0200</pubDate>
+      
+      <guid>https://n0x.io/authors/_n0x/</guid>
+      <description>_N0x is just a dude way to interested in anything computer related. Be it hardware, software, programming or even gaming.</description>
+    </item>
+    
+  </channel>
+</rss>
