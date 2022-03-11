@@ -139,3 +139,8 @@ At last you have to pin your session, like this:
 And now: Congratulations! You now have a Reverse-Shell on your victims PC! With the command "help" you can see what you can do now.
 
 Have fun, Good luck, Stay safe and don't let yourself get distracted by people with a Digispark! :D
+
+## EDIT 2022-03-11:
+Here are some more usefull tools people recommended to me over the years regarding creating payloads for the digispark from for example ducksript:
+ - [duck2spark by MaMe82](https://github.com/mame82/duck2spark)
+ - [OverThruster by RedLectroid](https://github.com/RedLectroid/OverThruster)
