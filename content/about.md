@@ -4,8 +4,8 @@ slug = "about"
 +++
 
 ## Contact me
-* E-Mail: tf[@]n0x.io [pgp](https://n0x.io/about/pgp)
-* Twitter: [@n0x_io](https://twitter.com/n0x_io)
+* E-Mail: tf[@]n0x.io 
+* Twitter: [@_n0tn0x](https://twitter.com/_n0tn0x)
 * GitLab: [n0x_io](https://gitlab.com/n0x_io)
 
 

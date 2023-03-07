@@ -18,7 +18,7 @@ favicon = "images/favicon.png"
 
 [params]
     author = "_N0x"
-    description = "Just some small blog"
+    description = "Just some small website"
     keywords = "blog,developer,personal"
     info = "» Here be dragons «"
     avatarurl = "images/spoopy.gif"
@@ -55,7 +55,7 @@ favicon = "images/favicon.png"
     name = "Twitter"
     icon = "fa fa-twitter fa-2x"
     weight = 3
-    url = "https://twitter.com/n0x_io"
+    url = "https://twitter.com/_n0tn0x"
 
 [[menu.main]]
     name = "Blog"
@@ -73,7 +73,15 @@ favicon = "images/favicon.png"
     name = "Git"
     weight = 4
     url = "https://git.n0x.io/"
+#[[menu.main]]
+#    name = "PrivateBin"
+#    weight = 5
+#    url = "https://pb.n0x.io/"
 [[menu.main]]
-    name = "PrivatBin"
-    weight = 5
-    url = "https://pb.n0x.io/"
+    name = "FreshRSS"
+    weight = 6
+    url = "https://frss.n0x.io/"
+#[[menu.main]]
+#    name = "BitWarden"
+#    weight = 7
+#    url = "https://bw.n0x.io/"
