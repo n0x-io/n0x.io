@@ -12,8 +12,8 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-favicon = "img/favicon/favicon.ico"
-
+#favicon = "img/favicon/favicon.ico"
+favicon = "/img/favicon/favicon-32x32.png"
 #disqusShortname = "yourdiscussshortname"
 
 [params]
