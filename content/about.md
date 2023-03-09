@@ -3,11 +3,12 @@ title = "About n0x.io"
 slug = "about"
 +++
 
-## Contact me
+![logo](/images/pics/logo.png)
+## Contact me!
+
 * E-Mail: tf[@]n0x.io 
 * Twitter: [@_n0tn0x](https://twitter.com/_n0tn0x)
 * GitLab: [n0x_io](https://gitlab.com/n0x_io)
-
 
 ## Build with Hugo
 This Website is generated with [Hugo](https://gohugo.io/) using the [Coder Theme](https://github.com/luizdepra/hugo-coder)

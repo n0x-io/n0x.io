@@ -13,7 +13,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 #favicon = "img/favicon/favicon.ico"
-favicon = "/img/favicon/favicon-32x32.png"
+favicon = "/images/favicon.ico"
 #disqusShortname = "yourdiscussshortname"
 
 [params]
@@ -21,7 +21,8 @@ favicon = "/img/favicon/favicon-32x32.png"
     description = "Just some small website"
     keywords = "blog,developer,cyber security,personal"
     info = "» Here be dragons «"
-    avatarurl = "img/spoopy.gif"
+    #avatarurl = "images/pics/spoopy.gif"
+    avatarurl = "images/pics/logo.png"
 
     footercontent = ""
     hideFooter = false
