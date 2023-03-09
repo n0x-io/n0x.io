@@ -3,25 +3,25 @@ title = "n0x.io"
 
 theme = "coder"
 
-languagecode = "de"
+languagecode = "en"
 
 paginate = 20
-canonifyurls = true
+canonifyurls = false
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-favicon = "images/favicon.png"
+favicon = "img/favicon/favicon.ico"
 
 #disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "_N0x"
     description = "Just some small website"
-    keywords = "blog,developer,personal"
+    keywords = "blog,developer,cyber security,personal"
     info = "» Here be dragons «"
-    avatarurl = "images/spoopy.gif"
+    avatarurl = "img/spoopy.gif"
 
     footercontent = ""
     hideFooter = false
@@ -59,28 +59,28 @@ favicon = "images/favicon.png"
 
 [[menu.main]]
     name = "Blog"
-    weight = 1
+    weight = 10
     url  = "/posts/"
 [[menu.main]]
-    name = "About"
-    weight = 999
-    url = "/about/"
-[[menu.main]]
     name = "Cloud"
-    weight = 3
+    weight = 20
     url = "https://cloud.n0x.io/"
 [[menu.main]]
+    name = "FreshRSS"
+    weight = 30
+    url = "https://frss.n0x.io/"
+[[menu.main]]
     name = "Git"
-    weight = 4
+    weight = 40
     url = "https://git.n0x.io/"
+[[menu.main]]
+    name = "About"
+    weight = 100
+    url = "/about/"
 #[[menu.main]]
 #    name = "PrivateBin"
 #    weight = 5
 #    url = "https://pb.n0x.io/"
-[[menu.main]]
-    name = "FreshRSS"
-    weight = 6
-    url = "https://frss.n0x.io/"
 #[[menu.main]]
 #    name = "BitWarden"
 #    weight = 7
