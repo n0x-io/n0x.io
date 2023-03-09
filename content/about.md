@@ -3,7 +3,7 @@ title = "About n0x.io"
 slug = "about"
 +++
 
-![logo](/images/pics/logo.png)
+![logo](/images/pics/logo_smal.png)
 ## Contact me!
 
 * E-Mail: tf[@]n0x.io 
