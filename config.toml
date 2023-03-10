@@ -12,7 +12,6 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-#favicon = "img/favicon/favicon.ico"
 favicon = "/images/favicon.ico"
 #disqusShortname = "yourdiscussshortname"
 
@@ -22,7 +21,7 @@ favicon = "/images/favicon.ico"
     keywords = "blog,developer,cyber security,personal"
     info = "» Here be dragons «"
     #avatarurl = "images/pics/spoopy.gif"
-    avatarurl = "images/pics/logo.png"
+    avatarurl = "images/logo.png"
 
     footercontent = ""
     hideFooter = false
@@ -32,9 +31,6 @@ favicon = "/images/favicon.ico"
 
     colorScheme = "dark"
     hidecolorschemetoggle = false 
-
-    # Custom CSS
-    custom_css = []
 
     # RTL support
     rtl = false
