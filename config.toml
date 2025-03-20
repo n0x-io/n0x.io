@@ -63,10 +63,6 @@ favicon = "/images/favicon.ico"
     weight = 20
     url = "https://cloud.n0x.io/"
 [[menu.main]]
-    name = "FreshRSS"
-    weight = 30
-    url = "https://frss.n0x.io/"
-[[menu.main]]
     name = "Git"
     weight = 40
     url = "https://git.n0x.io/"
