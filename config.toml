@@ -20,10 +20,9 @@ favicon = "/images/favicon.ico"
     description = "Just some small website"
     keywords = "blog,developer,cyber security,personal"
     info = "» Here be dragons «"
-    #avatarurl = "images/pics/spoopy.gif"
-    avatarurl = "images/logo.png"
+    avatarurl = "images/logo.gif"
 
-    footercontent = ""
+    footercontent = "ᓚᘏᗢ"
     hideFooter = false
     hideCredits = false
     hideCopyright = false
